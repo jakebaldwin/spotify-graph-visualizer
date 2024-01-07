@@ -1,0 +1,19 @@
+/* SpotifyButton.css */
+
+.spotify-button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.spotify-button {
+  background-color: #1DB954; /* Spotify green */
+  color: #fff; /* White text */
+  border: none;
+  border-radius: 5px;
+  padding: 15px 30px;
+  font-size: 18px;
+  text-decoration: none;
+  cursor: pointer;
+}
