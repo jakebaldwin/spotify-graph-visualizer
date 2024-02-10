@@ -1,0 +1,22 @@
+/* css/HomePage.css */
+.home-page-container {
+    text-align:center;
+    background-color: #f0f0f0;
+  }
+  
+  .custom-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .custom-table th, .custom-table td {
+    border-bottom: 1px solid #ddd; /* Horizontal lines only */
+    padding: 5%;
+    text-align: center;
+  }
+  
+  .custom-table th {
+    background-color: #f0f0f0; /* Header background color */
+    color: #333; /* Header text color */
+  }
+  
