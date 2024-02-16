@@ -1,22 +1,47 @@
-/* css/HomePage.css */
-.home-page-container {
-    text-align:center;
-    background-color: #f0f0f0;
-  }
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  max-width:1200px;
+  margin: auto;
+}
+
+.logo img {
+  height: 40px; /* Adjust height as needed */
+}
+
+.navbar-buttons button {
+  margin-left: 10px;
+}
+
+.graphcontainer {
+  width:100%;
+  height:100%;
+}
+
+.titlecontainer {
+  margin: auto;
+  text-align: center;
+  align-items: center;
+}
+
+.sharecontainer {
+  margin: auto;
+  text-align: center;
+  align-items: center;
+  background-color: '#ADD8E6';
   
-  .custom-table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  
-  .custom-table th, .custom-table td {
-    border-bottom: 1px solid #ddd; /* Horizontal lines only */
-    padding: 5%;
-    text-align: center;
-  }
-  
-  .custom-table th {
-    background-color: #f0f0f0; /* Header background color */
-    color: #333; /* Header text color */
-  }
-  
+}
+
+.shareicon {
+  background-color: '#ADD8E6';
+}
+
+.share-button {
+  border: none;
+  color: #333;
+  background-color: '#ADD8E6';
+  cursor: pointer;
+  font-size: 32px;
+}

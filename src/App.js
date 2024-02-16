@@ -27,10 +27,23 @@ const App = () => {
     checkLoggedInStatus();
   }, []); // Empty dependency array ensures this effect runs only once when the component mounts
 
+  const onLogout = async () => {
+    try {
+      // Make a request to the backend to check if the user is logged in
+      const response = await fetch('/api/logout');
+      const data = await response.json();
+
+      // Set the isLoggedIn state based on the response
+      setIsLoggedIn(data.isLoggedIn);
+    } catch (error) {
+      console.error('Error logging you out:', error);
+    }
+  }
+
   return (
     <div className="container">
       {isLoggedIn ? (
-        <HomePage />
+        <HomePage onLogout={onLogout}/>
       ) : (
         // User is not logged in, display landing page
         <LandingPageText />
